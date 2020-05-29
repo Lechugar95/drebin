@@ -25,7 +25,7 @@ def main(Args, FeatureOption):
         Logger.debug("MalDir: {}, GoodDir: {}, NCpuCores: {}, TestSize: {}, FeatureOption: {}, NumFeatForExp: {}"
                      .format(MalDir, GoodDir, NCpuCores, TestSize, FeatureOption, NumFeatForExp))
         GetApkData(NCpuCores, MalDir, GoodDir)
-        RandomClassification(MalDir, GoodDir, TestSize, FeatureOption, Model, NumFeatForExp)
+        # RandomClassification(MalDir, GoodDir, TestSize, FeatureOption, Model, NumFeatForExp)
     else:
         TestMalDir= Args.testmaldir
         TestGoodDir= Args.testgooddir
